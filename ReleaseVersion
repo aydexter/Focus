@@ -1,0 +1,229 @@
+
+
+local v0 = Instance.new("ScreenGui");
+v0.Name = "DraggableGUI";
+v0.ResetOnSpawn = false;
+v0.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui");
+local v4 = Instance.new("Frame");
+v4.Name = "DraggableFrame";
+v4.Size = UDim2.new(1655.1 - (1594 + 61), 250, 1661 - (108 + 1553), 370);
+v4.Position = UDim2.new(0.5, -150, 0.5, -(613 - (232 + 281)));
+v4.BackgroundColor3 = Color3.fromRGB(1508 - (976 + 277), 255, 1212 - (892 + 65));
+v4.BackgroundTransparency = 0 - 0;
+v4.Parent = v0;
+local v11 = Instance.new("UIGradient");
+v11.Color = ColorSequence.new({ColorSequenceKeypoint.new(0 - 0, Color3.fromRGB(350 - (87 + 263), 0, 180 - (67 + 113))),ColorSequenceKeypoint.new(1, Color3.fromRGB(626 - 371, 0, 0 + 0))});
+v11.Parent = v4;
+local v14 = Instance.new("UICorner");
+v14.CornerRadius = UDim.new(0 - 0, 962 - (802 + 150));
+v14.Parent = v4;
+local v17 = Instance.new("UIStroke");
+v17.Color = Color3.fromRGB(0 - 0, 0, 0);
+v17.Thickness = 3 - 1;
+v17.Parent = v4;
+local v21 = Instance.new("Frame");
+v21.Name = "Header";
+v21.Size = UDim2.new(1 + 0, 0, 997 - (915 + 82), 141 - 91);
+v21.BackgroundColor3 = Color3.fromRGB(0 + 0, 0 - 0, 0);
+v21.BackgroundTransparency = 1;
+v21.Parent = v4;
+local v27 = Instance.new("TextLabel");
+v27.Size = UDim2.new(1, 1187 - (1069 + 118), 1, 0 - 0);
+v27.BackgroundTransparency = 0.7 - 0;
+v27.TextColor3 = Color3.fromRGB(0 + 0, 0 - 0, 0 + 0);
+v27.Text = "Focus Confirmation";
+v27.TextScaled = true;
+v27.Parent = v21;
+local v34 = Instance.new("TextButton");
+v34.Name = "ActionButton";
+v34.Size = UDim2.new(791 - (368 + 423), 314 - 214, 0, 93 - (10 + 8));
+v34.Position = UDim2.new(0.5, -50, 0.5 - 0, -25);
+v34.BackgroundTransparency = 442.8 - (416 + 26);
+v34.TextColor3 = Color3.fromRGB(0, 0 - 0, 0 + 0);
+v34.Text = "Confirm and load Focus V1";
+v34.TextScaled = true;
+v34.Parent = v4;
+v34.MouseButton1Click:Connect(function()
+	local v44 = Instance.new("ScreenGui");
+	v44.Name = "DraggableGUI";
+	v44.ResetOnSpawn = false;
+	v44.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui");
+	local v48 = Instance.new("Frame");
+	v48.Name = "DraggableFrame";
+	v48.Size = UDim2.new(0 - 0, 938 - (145 + 293), 430 - (44 + 386), 1871 - (998 + 488));
+	v48.Position = UDim2.new(0.5, -150, 0.5 + 0, -(82 + 18));
+	v48.BackgroundColor3 = Color3.fromRGB(1027 - (201 + 571), 1393 - (116 + 1022), 1061 - 806);
+	v48.BackgroundTransparency = 0;
+	v48.Parent = v44;
+	local v55 = Instance.new("UIGradient");
+	v55.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(0 + 0, 0 - 0, 0 - 0)),ColorSequenceKeypoint.new(2 - 1, Color3.fromRGB(14 + 241, 0 + 0, 0))});
+	v55.Parent = v48;
+	local v58 = Instance.new("UICorner");
+	v58.CornerRadius = UDim.new(885 - (261 + 624), 10);
+	v58.Parent = v48;
+	local v61 = Instance.new("UIStroke");
+	v61.Color = Color3.fromRGB(0 - 0, 1080 - (1020 + 60), 1423 - (630 + 793));
+	v61.Thickness = 6 - 4;
+	v61.Parent = v48;
+	local v65 = Instance.new("Frame");
+	v65.Name = "Header";
+	v65.Size = UDim2.new(4 - 3, 0 + 0, 0, 172 - 122);
+	v65.BackgroundColor3 = Color3.fromRGB(1747 - (760 + 987), 1913 - (1789 + 124), 0);
+	v65.BackgroundTransparency = 767 - (745 + 21);
+	v65.Parent = v48;
+	local v71 = Instance.new("TextLabel");
+	v71.Size = UDim2.new(1, 0, 1 + 0, 0 - 0);
+	v71.BackgroundTransparency = 0.7;
+	v71.TextColor3 = Color3.fromRGB(0, 0 - 0, 0 + 0);
+	v71.Text = "Focus V1";
+	v71.TextScaled = true;
+	v71.Parent = v65;
+	local v78 = Instance.new("TextButton");
+	v78.Name = "ActionButton";
+	v78.Size = UDim2.new(0, 100, 0, 75);
+	v78.Position = UDim2.new(0.5 + 0, -(1105 - (87 + 968)), 0.4 - 0, -25);
+	v78.BackgroundTransparency = 0.8;
+	v78.TextColor3 = Color3.fromRGB(0 + 0, 0 - 0, 1413 - (447 + 966));
+	v78.Text = "ScytheGiver";
+	v78.TextScaled = true;
+	v78.Parent = v48;
+	v78.MouseButton1Click:Connect(function()
+		local v94 = 0;
+		local v95;
+		while true do
+			if (v94 == (0 - 0)) then
+				v95 = {[1818 - (1703 + 114)]={shopItem={lockAfterPurchase=true,itemType="wood_scythe",price=(701 - (376 + 325)),requireInInventoryToTierUp=true,superiorItems={[1 - 0]="stone_scythe"},currency="iron",category="Combat",amount=1,disabledInQueue={[2 - 1]="tnt_wars",[2]="bedwars_og_to4"},spawnWithItems={[1 + 0]="wood_scythe"},ignoredByKit={[2 - 1]="barbarian",[16 - (9 + 5)]="dasher",[379 - (85 + 291)]="frost_hammer_kit",[1269 - (243 + 1022)]="tinker",[5]="summoner",[22 - 16]="ice_queen",[7]="ember",[8]="lumen",[8 + 1]="summoner"}},shopId="2_item_shop_1"}};
+				game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("BedwarsPurchaseItem"):InvokeServer(unpack(v95));
+				break;
+			end
+		end
+	end);
+	local v78 = Instance.new("TextButton");
+	v78.Name = "ActionButton";
+	v78.Size = UDim2.new(1180 - (1123 + 57), 82 + 18, 254 - (163 + 91), 2005 - (1869 + 61));
+	v78.Position = UDim2.new(0.5 + 0, -(176 - 126), 0.6 - 0, -25);
+	v78.BackgroundTransparency = 0.8 + 0;
+	v78.TextColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0);
+	v78.Text = "InfiniteYield";
+	v78.TextScaled = true;
+	v78.Parent = v48;
+	v78.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+	end);
+	local v78 = Instance.new("TextButton");
+	v78.Name = "ActionButton";
+	v78.Size = UDim2.new(1474 - (1329 + 145), 100, 0, 1046 - (140 + 831));
+	v78.Position = UDim2.new(0.5, -(1900 - (1409 + 441)), 0.8, -(743 - (15 + 703)));
+	v78.BackgroundTransparency = 0.8 + 0;
+	v78.TextColor3 = Color3.fromRGB(0, 438 - (262 + 176), 1721 - (345 + 1376));
+	v78.Text = "Vape V4";
+	v78.TextScaled = true;
+	v78.Parent = v48;
+	v78.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))();
+	end);
+	local v78 = Instance.new("TextButton");
+	v78.Name = "ActionButton";
+	v78.Size = UDim2.new(-(689 - (198 + 490)), 1325 - 1025, 0 - 0, 1221 - (696 + 510));
+	v78.Position = UDim2.new(0.5 - 0, -50, 0.2, -(1287 - (1091 + 171)));
+	v78.BackgroundTransparency = 0.8 + 0;
+	v78.TextColor3 = Color3.fromRGB(0 - 0, 0 - 0, 374 - (123 + 251));
+	v78.Text = "Made with care by Delz and Dexter!";
+	v78.TextScaled = true;
+	v78.Parent = v48;
+	v78.MouseButton1Click:Connect(function()
+		print("FOCUS");
+	end);
+	local v78 = Instance.new("TextButton");
+	v78.Name = "ActionButton";
+	v78.Size = UDim2.new(-0.4, 496 - 396, 698 - (208 + 490), 75);
+	v78.Position = UDim2.new(0.5, -(5 + 45), 0.8 + 0, -(861 - (660 + 176)));
+	v78.BackgroundTransparency = 0.8;
+	v78.TextColor3 = Color3.fromRGB(0 + 0, 0, 0);
+	v78.Text = "Scripthub V3";
+	v78.TextScaled = true;
+	v78.Parent = v48;
+	v78.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Script-Hub-V3-20414"))();
+	end);
+	local v78 = Instance.new("TextButton");
+	v78.Name = "ActionButton";
+	v78.Size = UDim2.new(202 - (14 + 188), 775 - (534 + 141), 0 + 0, 67 + 8);
+	v78.Position = UDim2.new(0.5 + 0, 50, 0.8, -25);
+	v78.BackgroundTransparency = 0.8;
+	v78.TextColor3 = Color3.fromRGB(0 - 0, 0 - 0, 0);
+	v78.Text = "Nameless Admin";
+	v78.TextScaled = true;
+	v78.Parent = v48;
+	v78.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Steal-Time-From-Others-UPD-NA-nameless-admin-admin-20992"))();
+	end);
+	local function v87(v96)
+		local v97 = 0;
+		local v98;
+		while true do
+			if (v97 == (0 - 0)) then
+				v98 = v96.Position - dragStart;
+				v48.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + v98.X, startPos.Y.Scale, startPos.Y.Offset + v98.Y);
+				break;
+			end
+		end
+	end
+	v65.InputBegan:Connect(function(v99)
+		if ((v99.UserInputType == Enum.UserInputType.MouseButton1) or (v99.UserInputType == Enum.UserInputType.Touch)) then
+			local v104 = 0;
+			while true do
+				if (v104 == 1) then
+					startPos = v48.Position;
+					v99.Changed:Connect(function()
+						if (v99.UserInputState == Enum.UserInputState.End) then
+							dragging = false;
+						end
+					end);
+					break;
+				end
+				if (v104 == (0 + 0)) then
+					dragging = true;
+					dragStart = v99.Position;
+					v104 = 1 + 0;
+				end
+			end
+		end
+	end);
+	v65.InputChanged:Connect(function(v100)
+		if ((v100.UserInputType == Enum.UserInputType.MouseMovement) or (v100.UserInputType == Enum.UserInputType.Touch)) then
+			dragInput = v100;
+		end
+	end);
+	game:GetService("UserInputService").InputChanged:Connect(function(v101)
+		if (dragging and (v101 == dragInput)) then
+			v87(v101);
+		end
+	end);
+end);
+local function v43(v88)
+	local v89 = v88.Position - dragStart;
+	v4.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + v89.X, startPos.Y.Scale, startPos.Y.Offset + v89.Y);
+end
+v21.InputBegan:Connect(function(v91)
+	if ((v91.UserInputType == Enum.UserInputType.MouseButton1) or (v91.UserInputType == Enum.UserInputType.Touch)) then
+		dragging = true;
+		dragStart = v91.Position;
+		startPos = v4.Position;
+		v91.Changed:Connect(function()
+			if (v91.UserInputState == Enum.UserInputState.End) then
+				dragging = false;
+			end
+		end);
+	end
+end);
+v21.InputChanged:Connect(function(v92)
+	if ((v92.UserInputType == Enum.UserInputType.MouseMovement) or (v92.UserInputType == Enum.UserInputType.Touch)) then
+		dragInput = v92;
+	end
+end);
+game:GetService("UserInputService").InputChanged:Connect(function(v93)
+	if (dragging and (v93 == dragInput)) then
+		v43(v93);
+	end
+end);
